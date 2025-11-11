@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  img{
+    max-width: inherit;
+  
+    
+  }
+body {
+ background-image:url(https://images.unsplash.com/photo-1615715410201-8dbcd324e94a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ background-repeat: no-repeat;
+ background-size:cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header.primary {
+  grid-column: 1 / -1;             
+  grid-row: 1 / 2;
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: center;
+  padding: 1rem;
+        
+}
+
+header.primary h1 {
+  color: #f5f4f4;
+  margin: 0;
+}
+
+.topnav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.topnav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 20px;
+}
+
+.topnav ul li a:hover {
+  color: #0077cc;
+}
+
+
+.container{
+  
+   grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 58;
+}
+
+.intro{
+  color:#8C2B45;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row: 2/6;
+ margin:50px 0 0 50px;
+  padding: 10px;
+}
+.intro p{
+  font-size: 1rem;
+}
+   
+.headshot {
+  grid-column: 6 / 10;   
+  grid-row: 2;           
+  width: 400px;
+  height: auto;
+  margin: 0 150px 100px 0;
+  align-self: center;    
+  justify-self: center;  
+}
+
+h2{
+  font-size: 30px;
+  color:maroon;
+}
+
+  
+@media screen and (min-width:768px){
+  .row{
+     grid-template-columns:2,1fr;
+  }
+}
+
+@media screen and (min-width:992px){
+    .row{
+     grid-template-columns:repeat(4, 1fr);
+  }
+}
+  
+
+
+
+
+
+
+footer{
+  background-color:#f09fc1ba;
+  color: #090909;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 59;
+  grid-row-end: 60;
+  text-align: center;
+
+}
+footer a{
+  color: #0a0a0a;
+  margin: 8px;
+}
+h6{
+  font-size: 15px;
+  color:#060606;
+  margin-left: 10px;
+ 
+}
+.social{
+  margin-top: 1rem;
+}
