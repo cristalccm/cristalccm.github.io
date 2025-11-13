@@ -10,7 +10,7 @@ html {
     
   }
 body {
- background-image:url(https://images.unsplash.com/photo-1615715410201-8dbcd324e94a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ background-image:url(https://images.unsplash.com/photo-1615715494651-a15832fc0fd5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
  background-repeat: no-repeat;
  background-size:cover;
   display: grid;
@@ -32,7 +32,7 @@ header.primary {
 }
 
 header.primary h1 {
-  color: #f5f4f4;
+  color:#71065e;
   margin: 0;
 }
 
@@ -46,10 +46,11 @@ header.primary h1 {
 }
 
 .topnav ul li a {
-  color: #f2f2f2;
+  color: #71065e;
   text-decoration: none;
   padding: 14px 16px;
   font-size: 20px;
+  font-weight: 550;
 }
 
 .topnav ul li a:hover {
@@ -66,7 +67,7 @@ header.primary h1 {
 }
 
 .intro{
-  color:#8C2B45;
+  color: #970a7d;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row: 2/6;
@@ -89,7 +90,7 @@ header.primary h1 {
 
 h2{
   font-size: 30px;
-  color:maroon;
+  color: #970a7d;
 }
 
   
@@ -112,7 +113,7 @@ h2{
 
 
 footer{
-  background-color:#f09fc1ba;
+ 
   color: #090909;
   grid-column-start: 1;
   grid-column-end: 12;
