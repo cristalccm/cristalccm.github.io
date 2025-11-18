@@ -1,137 +1,165 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  img{
-    max-width: inherit;
-  
-    
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: inherit;
+}
 body {
- background-image:url(https://images.unsplash.com/photo-1615715494651-a15832fc0fd5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
- background-repeat: no-repeat;
- background-size:cover;
+  background-image: url(https://images.unsplash.com/photo-1615715757448-f8e0cdccf1e2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size:cover;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  grid-template-rows:auto auto 1fr auto;
+  font-family: "liberation-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
   margin: 0;
   padding: 0;
 }
 
 header.primary {
-  grid-column: 1 / -1;             
-  grid-row: 1 / 2;
-  display: flex;                   
-  justify-content: space-between;  
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: flex;
+
   align-items: center;
   padding: 1rem;
-        
+}
+.hero {
+  grid-column: 1 / -1;
+  grid-row: 2 ;
+  width: 100%;
+  height: 100%;          
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+}
+h1 {
+  font-family: parlare, sans-serif;
+  font-style: normal;
+  font-weight: 600;
 }
 
-header.primary h1 {
-  color:#71065e;
+header.primary img {
+  max-width: 120px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+  margin-left: 300px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(71, 0, 74);
+  text-align: center;
+
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  color: rgb(71, 0, 74);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
   margin: 0;
 }
 
-.topnav ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 1rem;
-  padding: 1rem;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.topnav ul li a {
-  color: #71065e;
+.dropdown-content a {
+  float: none;
+  color: black;
+  font-size: 12px;
+  padding: 12px 16px;
   text-decoration: none;
-  padding: 14px 16px;
-  font-size: 20px;
-  font-weight: 550;
+  display: block;
+  text-align: left;
 }
 
-.topnav ul li a:hover {
-  color: #0077cc;
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
-.container{
-  
-   grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 58;
-}
-
-.intro{
-  color: #970a7d;
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row: 2/6;
- margin:50px 0 0 50px;
-  padding: 10px;
-}
-.intro p{
-  font-size: 1rem;
-}
-   
+.container,
+.intro,
 .headshot {
-  grid-column: 6 / 10;   
-  grid-row: 2;           
-  width: 400px;
-  height: auto;
-  margin: 0 150px 100px 0;
-  align-self: center;    
-  justify-self: center;  
+  grid-column: 1/-1;
+  grid-row: 3;
 }
 
-h2{
+
+h2 {
   font-size: 30px;
   color: #970a7d;
 }
 
-  
-@media screen and (min-width:768px){
-  .row{
-     grid-template-columns:2,1fr;
+@media screen and (min-width: 768px) {
+  .row {
+    grid-template-columns: 2, 1fr;
   }
 }
 
-@media screen and (min-width:992px){
-    .row{
-     grid-template-columns:repeat(4, 1fr);
+@media screen and (min-width: 992px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
+
+
   
-
-
-
-
-
-
-footer{
- 
+footer {
   color: #090909;
-  grid-column-start: 1;
-  grid-column-end: 12;
-  grid-row-start: 59;
-  grid-row-end: 60;
+  grid-column: 1 / -1;
+  grid-row: 4; 
   text-align: center;
-
 }
-footer a{
+ 
+
+footer a {
   color: #0a0a0a;
   margin: 8px;
 }
-h6{
+h6 {
   font-size: 15px;
-  color:#060606;
+  color: #060606;
   margin-left: 10px;
- 
 }
-.social{
+.social {
   margin-top: 1rem;
 }
