@@ -27,9 +27,11 @@ header.primary {
   grid-column: 1 / -1;
   grid-row: 1;
   display: flex;
-
+   
   align-items: center;
   padding: 1rem;
+  
+   
 }
 .hero {
   grid-column: 1 / -1;
@@ -47,7 +49,8 @@ h1 {
   font-family: parlare, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 46px;
+  font-size: 50px;
+  margin-top: 160px;
 }
 h2{
   font-weight: 500;
@@ -68,6 +71,7 @@ header.primary img {
 .navbar a {
   float: left;
   font-size: 18px;
+  font-weight: 600;
   color: rgb(71, 0, 74);
   text-align: center;
 
@@ -81,8 +85,8 @@ header.primary img {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   border: none;
   outline: none;
   color: rgb(71, 0, 74);
@@ -118,17 +122,27 @@ header.primary img {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.art {
+  grid-row: 2;
+  position: absolute; 
+  top: -5%;             
+  left: 58%;          
+  transform: translateX(-50%);
+  z-index: 0;         
+  opacity: 0.2;   
+  width:140%    
+}
 .typing-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5vh; 
-   color: #970a7d;
+   color: #440438;
     font-family: source-serif-4, serif;
 font-style: normal;
 font-weight: 200;
     font-size: 2.5em;
+    margin-top: 40px;
 }
 
 .auto-type {
@@ -148,17 +162,41 @@ font-weight: 200;
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
-.container,
-.intro,
-.headshot {
-  grid-column: 1/-1;
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  background-color:#b76db589 ;
+  padding: 2rem;
+  border-radius: 12px;
+  grid-column: 1 / -1; 
+  grid-row: 3; 
+  margin-top:400px;
+}
+
+.headshot,
+.intro {
   grid-row: 3;
 }
 
+.intro {
+  grid-column: 1 / span 4; 
+  grid-row: 3;
+  padding: 20px 200px 20px 40px;
+  color: #100f10;
+  font-size: 18px;
+}
 
+.headshot {
+  grid-column: 5 / span 2; 
+  grid-row: 3;
+  max-width: 60%;
+  margin-left: 80px;
+  margin-top: -20px;
+}
 h2 {
   font-size: 30px;
-  color: #970a7d;
+  color: #020202;
   grid-row: 3;
 }
 
