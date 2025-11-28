@@ -386,6 +386,150 @@ h2 {
 }
 
 
+
+.contact {
+  display: block !important;
+  width: 100%;
+}
+
+    .resume-wrapper {
+      max-width: 1100px;
+      grid-column: 1 / -1;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 600;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+    }
+.resume-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;
+  width: 100%;
+}
+
+
+   
+    .sidebar h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+     .contact a{
+      padding:20px;
+     }
+    .contact-info a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: #eef5ff;
+      color: #004a88;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin: 4px 6px 4px 0;
+      font-size: 0.9rem;
+    }
+
+    .job, .project, .education-item {
+      margin-bottom: 25px;
+    }
+
+    .job h3, .project h3 {
+      margin-bottom: 3px;
+      font-size: 1.1rem;
+    }
+
+    .job .company {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .job .date {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      border-bottom: 3px solid #ddd;
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+    }
+
+
+.coverletter-container {
+      max-width: 100%;
+      margin: 2rem auto;
+      padding: 2rem 3rem;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    .coverletter-header p {
+      margin: 0.2rem 0;
+    }
+
+    .coverletter-body {
+      margin-top: 1.5rem;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .coverletter-body p {
+      margin-bottom: 1rem;
+    }
+
+    .coverletter-footer {
+      margin-top: 2rem;
+    }
+
 @media (max-width: 600px) {
   .project-card {
     width: 90%;                   
@@ -400,7 +544,22 @@ h2 {
   .skills-list {
     grid-template-columns: 1fr;
   }
-
+    .container {
+    padding: 25px 20px;     
+  }
+  .contact {
+    flex-direction: column;  
+  }
+  .skills-list {
+    flex-direction: column;  
+  }
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+.two-col{
+  grid-template-columns: 1fr;
+}
 }
 @media screen and (min-width: 768px) {
   .row {
