@@ -38,21 +38,38 @@ body {
 h1 {
   font-family: parlare, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 50px;
   margin-top: 10px;
+  color:#6e0e4e;
   
+}
+.hero h1,
+.typing-container {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
 }
 .name{
   margin: 60px;
+  color:#640553;
 }
 h2{
   font-weight: 500;
 }
-h1,h2,h3{
-color:#791a56;
+h2,h3{
+color:#fed5f0;
 }  
+h2.contact{
+  color:#640553;
 
+}
+.section-title{
+  color: #640553;
+}
+.label{
+  color: #640553;
+}
 header.primary {
   width: 100%;
   position: relative; 
@@ -90,10 +107,7 @@ header.primary .logo {
   color:#a36dda; 
 }
 .hamburger {
-    display: block;
-    font-size: 2.5rem;
-    cursor: pointer;
-    z-index: 1001;
+    display: none;
 }
 
 .art {
@@ -277,14 +291,14 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size:3.5rem;
-  color:#640553;
+  color:#fffeff;
   margin-bottom: 8rem;
   
 }
 
 .projects-subtitle {
   font-size: 1.1rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 3rem;
 }
 
@@ -350,7 +364,7 @@ h2 {
 
 .category-title {
   font-size: 2rem;
-  color:#640553;
+  color:#fceffa;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -565,7 +579,11 @@ h2 {
 .contact-card p {
   color:#970a7d;
 }
+.phone{
+  color:#970a7d;
+  font-size:1.4rem
 
+}
 @media screen and (max-width: 600px) {
   .project-card {
     width: 90%;                   
@@ -579,9 +597,12 @@ h2 {
 
 
 @media screen and (max-width: 768px) {
+ header.primary {
+  justify-content: space-between;
+  padding: 1rem;
+}
   .hero{
     margin-top: 10px;
-    
   }
 
   .art{
@@ -595,34 +616,38 @@ h2 {
     font-size: 32px !important;
   }
 
- .nav-links {
+  .nav-links {
     position: absolute;
-    top: 70px; 
-    right: 0;
+    top: 100%;
+    left: 0;
     width: 100%;
-    flex-direction: column;
-    background-color: #fff;
-    max-height: 0; 
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    z-index: 1000;
-  }
 
-  .nav-links li {
-    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: white;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.3s ease;
+
+    z-index: 9999;
   }
 
   .nav-links.active {
-    max-height: 500px; 
+    max-height: 500px;
+    padding: 1rem 0;
   }
 
   .hamburger {
     display: block;
-    cursor: pointer;
-    z-index: 1001;
-    font-size: 2rem;
+    background: none;
+    border: none;
+    color:#fff;
+    font-size: 2.4rem;
   }
-
     .container {
     display: flex;
     flex-direction: column; 
@@ -799,12 +824,16 @@ h6 {
 }
 
 .social-icons a {
-  color: white;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.social-icons a i {
+  line-height: 1;
+  display: block;
+}
 .social-icons a:hover {
   color: #f3e7f1;
   transform: scale(1.1);
