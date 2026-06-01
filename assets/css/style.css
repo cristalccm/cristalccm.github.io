@@ -57,7 +57,7 @@ body {
 ========================= */
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 2.8rem);
 }
 
 h2 {
@@ -144,10 +144,23 @@ header.primary {
 .hero-right {
   flex: 1;
 }
+.hero-left{
+  margin-left: 60px;
+}
 .hero h1 {
+ font-family: "good-karma-smooth-regular", sans-serif;
+font-weight: 400;
+font-style: normal;
   background: linear-gradient(90deg, #ff6bb5, #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  line-height:6rem;
+  margin-bottom: 10px;
+}
+.hero-greeting,
+.hero-name {
+  display: block;
 }
 .hero h2{
   color: #4c2c88;
@@ -155,10 +168,12 @@ header.primary {
   margin:auto;
 }
 .typing-container {
-    font-size: 1.4rem;
-    font-weight: 600;
+   font-family: "good-karma-smooth-regular", sans-serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 3rem;
     color: #6f5cff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .hero-actions {
   display: flex;
@@ -174,6 +189,7 @@ header.primary {
 }
 .hero-art-wrapper {
   position: relative;
+margin-top: 40px;
 }
 .circle {
   position: absolute;
@@ -790,7 +806,9 @@ footer {
     .hero {
     flex-direction: column;
   }
-
+.hero-left{
+  margin:auto;
+}
   .hero-art-wrapper {
     margin-top: 2rem;
   }
@@ -836,5 +854,8 @@ footer {
     .two-col {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .headshot{
+    visibility: hidden;
   }
 }
