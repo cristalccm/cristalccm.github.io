@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (autoType) {
     new Typed(".auto-type", {
-      strings: ["Web Developer", "Designer", "Innovator"],
+      strings: ["beautiful websites.", "responsive experiences.", "intuitive interfaces.", "creative solutions."],
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 20,
       backDelay: 1000,
       loop: true
     });
