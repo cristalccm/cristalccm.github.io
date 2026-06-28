@@ -384,7 +384,16 @@ margin-top: 40px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
+.skills-category {
+    margin-bottom: 3rem;
+}
 
+.skills-category h3 {
+    color: #6f42c1;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
 .skill {
   display: flex;
   align-items: center;
